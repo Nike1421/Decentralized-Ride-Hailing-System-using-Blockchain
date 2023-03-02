@@ -1,4 +1,0 @@
-const mapbox_access_token = "pk.eyJ1IjoibmlrZTE0MjEiLCJhIjoiY2t3eGE2cjkzMGJ3YjJ2bGF2YnB1bDlrNyJ9.9-2Wtpza6YIuPDyhpCpzSA";
-const riderSK = "452a1e3f893f88db62dfe874ac2356885306cbb9beabf69becd6f4341dd7954c";
-const driverAddress = "0xE556AbdEcC3C89820e53dD379547070817f55472";
-const ethPublicKeyWhenNotInit = "0x2A4EC1a9a5e65AAF2F8f243A29270578FCfc044c";
