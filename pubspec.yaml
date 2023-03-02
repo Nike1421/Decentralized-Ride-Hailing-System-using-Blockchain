@@ -46,7 +46,7 @@ dependencies:
 
   path_provider: ^2.0.10
 
-  permission_handler: ^9.0n.0
+  permission_handler: ^9.0.0
 
 
 
