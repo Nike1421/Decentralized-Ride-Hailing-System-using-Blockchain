@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:web3dart/credentials.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../.env.dart';
 import '../map_controllers/riders.dart';
 import '../blockchain_controllers/contract_linking.dart';
 
@@ -32,7 +33,7 @@ class _DriverMainPageState extends State<DriverMainPage> {
     // var ethPrivateKey = prefs.getString('driverPrivateKey');
     var ethPublicKey = prefs.getString('driverPublicKey');
     print(ethPublicKey);
-    ethPublicKey ??= "0x2A4EC1a9a5e65AAF2F8f243A29270578FCfc044c";
+    ethPublicKey ??= ethPublicKeyWhenNotInit;
 
     setState(() {
       _ethPublicKey = ethPublicKey!;

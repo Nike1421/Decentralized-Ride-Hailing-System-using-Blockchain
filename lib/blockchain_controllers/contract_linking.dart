@@ -10,16 +10,17 @@ import 'package:web_socket_channel/io.dart' show IOWebSocketChannel;
 import 'package:web3dart/web3dart.dart'
     show ContractAbi, ContractEvent, ContractFunction, Credentials, DeployedContract, EthPrivateKey, EtherAmount, EthereumAddress, FilterOptions, Transaction, Wallet, Web3Client;
 
+import '../.env.dart';
 import '../map_controllers/riders.dart';
+
 
 class ContractLinking extends ChangeNotifier {
   final String _rpcUrl = "http://10.0.2.2:7545";
   final String _wsUrl = "ws://10.0.2.2:7545/";
-  late String _riderSK =
-      "452a1e3f893f88db62dfe874ac2356885306cbb9beabf69becd6f4341dd7954c";
+  late final String _riderSK = riderSK;
 
   // late EthPrivateKey _riderSK;
-  // final String _driverAddress = "0xE556AbdEcC3C89820e53dD379547070817f55472";
+  // final String _driverAddress = driverAddress;
 
 
   late Web3Client _client;
