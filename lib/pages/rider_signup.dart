@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:blockchain_ridesharing/ipfs_connect.dart';
+import 'package:blockchain_ridesharing/ipfs_controllers/ipfs_connect.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web3dart/credentials.dart';

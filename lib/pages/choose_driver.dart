@@ -1,11 +1,12 @@
-import 'package:shared_preferences/shared_preferences.dart';
-
-import '../riders.dart';
-import '../contract_linking.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:web3dart/credentials.dart';
-import 'package:blockchain_ridesharing/ipfs_connect.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../map_controllers/riders.dart';
+import '../ipfs_controllers/ipfs_connect.dart';
+import '../blockchain_controllers/contract_linking.dart';
+
 
 class ChooseDriver extends StatefulWidget {
   const ChooseDriver({Key? key}) : super(key: key);

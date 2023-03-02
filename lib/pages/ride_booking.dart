@@ -1,15 +1,17 @@
-import 'package:blockchain_ridesharing/riders.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:blockchain_ridesharing/directions_repo.dart';
-import 'package:blockchain_ridesharing/autocomplete_model.dart';
-import 'package:blockchain_ridesharing/search_delegate_options.dart';
 import 'package:provider/provider.dart';
-import 'dart:async';
-import 'package:blockchain_ridesharing/contract_linking.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'choose_driver.dart';
+
+import './choose_driver.dart';
+import '../map_controllers/riders.dart';
+import '../blockchain_controllers/contract_linking.dart';
+
+import '../map_controllers/directions_repo.dart';
+import '../map_controllers/autocomplete_model.dart';
+import '../map_controllers/search_delegate_options.dart';
 
 class BookRide extends StatefulWidget {
   const BookRide({Key? key}) : super(key: key);

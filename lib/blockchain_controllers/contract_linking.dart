@@ -1,18 +1,16 @@
-import 'dart:convert' show json, jsonDecode, jsonEncode;
-import 'package:blockchain_ridesharing/riders.dart';
+import 'package:latlong2/latlong.dart';
+import 'package:web3dart/web3dart.dart';
+import 'package:http/http.dart' show Client;
+import 'dart:convert' show jsonDecode, jsonEncode;
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter/cupertino.dart' show ChangeNotifier;
 import 'package:flutter/foundation.dart' show ChangeNotifier;
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:http/http.dart' show Client;
-import 'package:latlong2/latlong.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:web_socket_channel/io.dart' show IOWebSocketChannel;
 import 'package:web3dart/web3dart.dart'
     show ContractAbi, ContractEvent, ContractFunction, Credentials, DeployedContract, EthPrivateKey, EtherAmount, EthereumAddress, FilterOptions, Transaction, Wallet, Web3Client;
-import 'package:web3dart/web3dart.dart';
-import 'package:web_socket_channel/io.dart' show IOWebSocketChannel;
-import 'dart:io';
+
+import '../map_controllers/riders.dart';
 
 class ContractLinking extends ChangeNotifier {
   final String _rpcUrl = "http://10.0.2.2:7545";

@@ -1,12 +1,10 @@
-import 'package:blockchain_ridesharing/riders.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web3dart/credentials.dart';
-import '../contract_linking.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../map_controllers/riders.dart';
+import '../blockchain_controllers/contract_linking.dart';
 
 class DriverMainPage extends StatefulWidget {
   const DriverMainPage({Key? key}) : super(key: key);

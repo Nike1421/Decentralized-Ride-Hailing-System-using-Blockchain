@@ -10,7 +10,7 @@ import 'package:blockchain_ridesharing/pages/rider_signup.dart';
 import 'package:blockchain_ridesharing/pages/rider_signin.dart';
 import 'package:blockchain_ridesharing/pages/ride_booking.dart';
 import 'package:blockchain_ridesharing/pages/map_page.dart';
-import 'package:blockchain_ridesharing/contract_linking.dart';
+import 'package:blockchain_ridesharing/blockchain_controllers/contract_linking.dart';
 import 'package:provider/provider.dart';
 // import 'package:blockchain_ridesharing/pages/conf_trial.dart';
 

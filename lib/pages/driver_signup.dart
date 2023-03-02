@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../ipfs_connect.dart';
+import '../ipfs_controllers/ipfs_connect.dart';
 
 class DriverRegistrationForm extends StatefulWidget {
   const DriverRegistrationForm({Key? key}) : super(key: key);

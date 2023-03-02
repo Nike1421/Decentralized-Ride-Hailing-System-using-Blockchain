@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_map/flutter_map.dart';
 import "package:latlong2/latlong.dart";
+import 'package:flutter_map/flutter_map.dart';
 
-import 'package:blockchain_ridesharing/autocomplete_model.dart';
-import 'package:blockchain_ridesharing/autocomplete_repo.dart';
-
-import 'package:blockchain_ridesharing/search_delegate_options.dart';
-import 'package:blockchain_ridesharing/contract_linking.dart';
-import 'package:provider/provider.dart';
-
-import '../directions_repo.dart';
+import '../map_controllers/directions_repo.dart';
+import '../map_controllers/autocomplete_model.dart';
 
 class MapPageWidget extends StatefulWidget {
   const MapPageWidget({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../rating_widget.dart';
+import '../map_controllers/rating_widget.dart';
 
 class RideEnd extends StatefulWidget {
   const RideEnd({Key? key}) : super(key: key);
