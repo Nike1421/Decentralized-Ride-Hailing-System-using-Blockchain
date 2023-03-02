@@ -1,4 +1,4 @@
-# decen_ridesharing
+# blockchain_ridesharing
 
 A new Flutter project.
 
